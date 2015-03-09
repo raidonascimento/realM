@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/data/association
+END
+Association.js
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/data/association/Association.js
+END
+BelongsTo.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/data/association/BelongsTo.js
+END
+HasOne.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/data/association/HasOne.js
+END
+HasMany.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/data/association/HasMany.js
+END

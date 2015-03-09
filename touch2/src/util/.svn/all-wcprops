@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util
+END
+AbstractMixedCollection.js
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util/AbstractMixedCollection.js
+END
+Droppable.js
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util/Droppable.js
+END
+Draggable.js
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util/Draggable.js
+END
+TranslatableList.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util/TranslatableList.js
+END
+LineSegment.js
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util/LineSegment.js
+END
+Sortable.js
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util/Sortable.js
+END
+TapRepeater.js
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util/TapRepeater.js
+END
+Translatable.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util/Translatable.js
+END
+Sorter.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util/Sorter.js
+END
+Wrapper.js
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util/Wrapper.js
+END
+HashMap.js
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util/HashMap.js
+END
+MixedCollection.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util/MixedCollection.js
+END
+SizeMonitor.js
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util/SizeMonitor.js
+END
+Region.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util/Region.js
+END
+PaintMonitor.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util/PaintMonitor.js
+END
+Grouper.js
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util/Grouper.js
+END
+Filter.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util/Filter.js
+END
+Inflector.js
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util/Inflector.js
+END
+Offset.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util/Offset.js
+END
+Format.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util/Format.js
+END
+TranslatableGroup.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util/TranslatableGroup.js
+END
+Point.js
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util/Point.js
+END
+DelayedTask.js
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util/DelayedTask.js
+END
+Collection.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util/Collection.js
+END
+BufferedCollection.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util/BufferedCollection.js
+END
+Audio.js
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util/Audio.js
+END
+InputBlocker.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util/InputBlocker.js
+END
+PositionMap.js
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util/PositionMap.js
+END
+Geolocation.js
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/util/Geolocation.js
+END

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/event/recognizer
+END
+SingleTouch.js
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/event/recognizer/SingleTouch.js
+END
+Tap.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/event/recognizer/Tap.js
+END
+Recognizer.js
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/event/recognizer/Recognizer.js
+END
+Swipe.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/event/recognizer/Swipe.js
+END
+EdgeSwipe.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/event/recognizer/EdgeSwipe.js
+END
+LongPress.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/event/recognizer/LongPress.js
+END
+Drag.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/event/recognizer/Drag.js
+END
+MultiTouch.js
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/event/recognizer/MultiTouch.js
+END
+Rotate.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/event/recognizer/Rotate.js
+END
+DoubleTap.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/event/recognizer/DoubleTap.js
+END
+HorizontalSwipe.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/event/recognizer/HorizontalSwipe.js
+END
+Pinch.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/event/recognizer/Pinch.js
+END
+VerticalSwipe.js
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/event/recognizer/VerticalSwipe.js
+END
+Touch.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/web/realpneus_mobile/!svn/ver/11/touch2/src/event/recognizer/Touch.js
+END
