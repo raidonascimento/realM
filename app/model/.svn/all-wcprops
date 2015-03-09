@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/web/realpneus_mobile/!svn/ver/11/app/model
+END
+clientesModel.js
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/web/realpneus_mobile/!svn/ver/11/app/model/clientesModel.js
+END
+sincronizarClientesModel.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/web/realpneus_mobile/!svn/ver/11/app/model/sincronizarClientesModel.js
+END
+coletasModel.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/web/realpneus_mobile/!svn/ver/11/app/model/coletasModel.js
+END
+ipSincronizarModel.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/web/realpneus_mobile/!svn/ver/11/app/model/ipSincronizarModel.js
+END
+pneusModel.js
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/web/realpneus_mobile/!svn/ver/11/app/model/pneusModel.js
+END
+sincronizarPneusModel.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/web/realpneus_mobile/!svn/ver/11/app/model/sincronizarPneusModel.js
+END
+coletasCompletoModel.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/web/realpneus_mobile/!svn/ver/11/app/model/coletasCompletoModel.js
+END
+servicosModel.js
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/web/realpneus_mobile/!svn/ver/11/app/model/servicosModel.js
+END
+funcionariosModel.js
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/web/realpneus_mobile/!svn/ver/11/app/model/funcionariosModel.js
+END
+sincronizarServicosModel.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/web/realpneus_mobile/!svn/ver/11/app/model/sincronizarServicosModel.js
+END
+codigoFuncionarioModel.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/web/realpneus_mobile/!svn/ver/11/app/model/codigoFuncionarioModel.js
+END
+sincronizarFuncionariosModel.js
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/web/realpneus_mobile/!svn/ver/11/app/model/sincronizarFuncionariosModel.js
+END
+pneusColetaModel.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/web/realpneus_mobile/!svn/ver/11/app/model/pneusColetaModel.js
+END
