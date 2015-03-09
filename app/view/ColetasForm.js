@@ -1,63 +1,81 @@
 Ext.define('realPneus.view.coletasForm', {
-    extend: 'Ext.form.Panel',
-    onItemDisclosure: true,
-    alias: 'widget.coletasForm',
-    requires: [
-	'Ext.field.Select',
-	'Ext.field.DatePicker',
-	'Ext.form.FieldSet',
-	'Ext.List'
-    ],
-    config: {
+extend: 'Ext.form.Panel',
+	onItemDisclosure: true,
+	alias: 'widget.coletasForm',
+	requires: [
+		'Ext.field.Select',
+		'Ext.field.DatePicker',
+		'Ext.form.FieldSet',
+		'Ext.List'
+	],
+	config: {
 	items: [
-	    {
-		docked: 'top',
+	{
+	docked: 'top',
 		xtype: 'toolbar',
 		//ui: 'light',
 		title: 'Coleta de Pneus',
 		itemId: 'toolbarFormColeta',
 		items: [
-		    {
-			xtype: 'button',
+		{
+		xtype: 'button',
 			action: 'menuIniciar',
 			text: 'Menu Iniciar'
-		    }
+		}
 		]
-	    },
-	    {
-		xtype: 'fieldset',
-		items: [
-		    {
-			xtype: 'textfield',
-			name: 'nome_cliente',
-			label: 'nome'
-		    },
-		    {
-			xtype: 'textfield',
-			name: 'cpf_cnpj',
-			label: 'CPF ou CNPJ'
-		    },
-		    {
-			xtype: 'textfield',
-			name: 'observacao',
-			label: 'Observação'
-		    },
-		    {
-			xtype: 'datepickerfield',
-			label: 'Data da Entrega',
-			name: 'data_entrega',
-			dateFormat: 'd/m/Y',
-			submitFormat: 'd/m/Y',
-			//useMask: true,
-			value: new Date(),
-			picker: {
-			    slotOrder: ['day', 'month', 'year']
-			}
-		    }
-		]
-	    },
-	    {
-		xtype: 'selectfield',
+	},
+	{
+	xtype: 'fieldset',
+
+
+	items: [
+
+	{
+	xtype: 'textfield',
+		name: 'nome_cliente',
+		label: 'Nome'
+	},
+	{
+	xtype: 'button',
+		iconCls: 'search',
+		text: 'Lista de Clientes',
+		height: 40,
+		width:220,
+		action: 'listaclientes',
+		
+		ui: 'action'
+	},
+	{
+	xtype: 'container',
+		height: 15
+
+	},
+//	{
+//	xtype: 'textfield',
+//		name: 'cpf_cnpj',
+//		label: 'CPF ou CNPJ'
+//	},
+	{
+	xtype: 'textfield',
+		name: 'observacao',
+		label: 'Observação'
+	},
+	{
+	xtype: 'datepickerfield',
+		label: 'Data da Entrega',
+		name: 'data_entrega',
+		dateFormat: 'd/m/Y',
+		submitFormat: 'd/m/Y',
+		//useMask: true,
+		value: new Date(),
+		picker: {
+		slotOrder: ['day', 'month', 'year']
+		}
+	}
+	]
+	},
+	{
+	xtype: 'selectfield',
 		label: 'Pneu',
 		name: 'idPneu',
 		displayField: 'todos',
@@ -67,58 +85,58 @@ Ext.define('realPneus.view.coletasForm', {
 		usePicker: true,
 		autoSelect: true,
 		store: 'pneusStore'
-	    },
-	    {
-		xtype: 'selectfield',
+	},
+	{
+	xtype: 'selectfield',
 		label: 'Serviço',
 		name: 'cod_servico',
 		placeHolder: 'Selecione o Serviço',
 		autoSelect: true,
 		usePicker: true,
 		disabled: true
-	    },
-	    {
-		xtype: 'textfield',
+	},
+	{
+	xtype: 'textfield',
 		name: 'n_fogo',
 		label: 'Nº do fogo'
-	    },
-	    {
-		xtype: 'textfield',
+	},
+	{
+	xtype: 'textfield',
 		name: 'n_serie',
 		label: 'Nº de serie'
 
-	    },
-	    {
-		xtype: 'button',
+	},
+	{
+	xtype: 'button',
 		action: 'salvarPneusColeta',
 		ui: 'confirm',
 		text: 'Salvar Pneus'
-	    },
-	    {
-		xtype: 'container',
+	},
+	{
+	xtype: 'container',
 		height: 25
-	    },
-	    {
-		xtype: 'button',
+	},
+	{
+	xtype: 'button',
 		action: 'salvarColeta',
 		ui: 'confirm',
 		text: 'Salvar Coletas'
-	    },
-	    {
-		xtype: 'datepickerfield',
+	},
+	{
+	xtype: 'datepickerfield',
 		label: 'data da coleta',
 		name: 'data_coleta',
 		dateFormat: 'd/m/Y',
 		hidden: true,
 		value: new Date()
-	    },
-	    {
-		xtype: 'textfield',
+	},
+	{
+	xtype: 'textfield',
 		label: '',
 		name: 'id',
 		hidden: true
-	    }
-	    
+	}
+
 	]
-    }
+	}
 });

@@ -89,7 +89,7 @@ Ext.define('app.data.proxy.CustomSql', {
                 result.setTotal(count);
                 result.setCount(count);
 
-                if (typeof callback == 'function') {
+                if (typeof callback === 'function') {
                     callback.call(scope || me, result);
                 }
             },
@@ -99,7 +99,7 @@ Ext.define('app.data.proxy.CustomSql', {
                 result.setTotal(0);
                 result.setCount(0);
 
-                if (typeof callback == 'function') {
+                if (typeof callback === 'function') {
                     callback.call(scope || me, result);
                 }
             }

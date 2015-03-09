@@ -118,98 +118,6 @@ Ext.define('realPneus.controller.main', {
 	});
 
     },
-//    onSearchKeyUp: function(field) {
-//        //get the store and the value of the field
-//        var value = field.getValue(),
-//                store = Ext.ComponentQuery.query('#accountlist')[0].getStore();
-// 
-//        //first clear any current filters on thes tore
-//        store.clearFilter();
-// 
-//        if (value) {
-//            var thisRegEx = new RegExp(value, "i");
-//            store.filterBy(function(record) {
-//                if (thisRegEx.test(record.get('name'))) {
-//                    return true;
-//                }
-//                ;
-//                return false;
-//            });
-//        }
-//    },
-//   
-//    // * Called when the user taps on the clear icon in the search field.
-// 
-//  //   
-//    onSearchClearIconTap: function() {
-//        //call the clearFilter method on the store instance
-//        // this.getStore().clearFilter();
-//        var store = Ext.getStore('accountstore');
-//        store.clearFilter();
-//    },
-
-
-
-//    onSearchKeyUp: function (field) {
-//	console.log(field);
-//	//get the store and the value of the field
-//	var value = field.getValue(),
-//		store = Ext.getCmp('clientesList').getStore();    //  getting the store that drives the contact list
-//	console.log(store);
-//	//first clear any current filters on thes tore
-//	store.clearFilter();
-//
-//	//check if a value is set first, as if it isnt we dont have to do anything
-//	if (value) {
-//	    console.log(value);
-//	    //the user could have entered spaces, so we must split them so we can loop through them all
-//	    var searches = value.split(' '),
-//		    regexps = [],
-//		    i;
-//
-//	    //loop them all
-//	    for (i = 0; i < searches.length; i++) {
-//		//if it is nothing, continue
-//		if (!searches[i])
-//		    continue;
-//
-//		//if found, create a new regular expression which is case insenstive
-//		regexps.push(new RegExp(searches[i], 'i'));
-//	    }
-//
-//	    //now filter the store by passing a method
-//	    //the passed method will be called for each record in the store
-//	    store.filter(function (record) {
-//		var matched = [];
-//
-//		//loop through each of the regular expressions
-//		for (i = 0; i < regexps.length; i++) {
-//		    var search = regexps[i],
-//			    didMatch = record.get('nome_cliente').match(search) ||
-//			    record.get('nome_cliente').match(search);
-//		    //if it matched the first or last name, push it into the matches array 
-//
-//		    matched.push(didMatch);
-//
-//		}  //if nothing was found, return false (dont so in the store)               
-//
-//		if (regexps.length > 1 && matched.indexOf(false) != -1) {
-//		    return false;
-//		} else {
-//		    //else true true (show in the store)
-//		    return matched[0];
-//		}
-//	    });
-//	}
-//    },
-    /**
-     * Called when the user taps on the clear icon in the search field.
-     * It simply removes the filter form the store
-     */
-//    onSearchClearIconTap: function () {
-//	//call the clearFilter method on the store instance
-//	Ext.getCmp('clientesList').getStore().clearFilter();
-//    },
     atualizandoStore: function () {
 	Ext.Viewport.setActiveItem(this.getMenuIniciar());
 
@@ -432,11 +340,11 @@ Ext.define('realPneus.controller.main', {
 	store13.load();
 
 	var record10 = store13.data.last();
-	if (record10 == null) {
+	if (record10 === null) {
 	    Ext.Msg.alert('Pneus Coleta', 'Não exitem pneus cadastrados nessa coleta.', Ext.emptyFn);
 	} else {
 	    var arquivo = record10.data.codigo_coleta;
-	    if (arquivo == '') {
+	    if (arquivo === '') {
 		this.salvarColeta();
 	    } else {
 		Ext.Msg.alert('Pneus Coleta', 'Não exitem pneus cadastrados nessa coleta.', Ext.emptyFn);
@@ -477,12 +385,12 @@ Ext.define('realPneus.controller.main', {
 	_storePneusColeta.each(function () {
 	    var _recordPneusColeta = _storePneusColeta.data.get(j + 1);
 
-	    if (_recordPneusColeta.data.codigo_coleta == '') {
+	    if (_recordPneusColeta.data.codigo_coleta === '') {
 		var _coletasStore = Ext.getStore('coletasStore');
 		_coletasStore.load();
 		var _recordColetas = _coletasStore.data.last();
 
-		if (_recordColetas == null) {
+		if (_recordColetas === null) {
 		    var db = openDatabase("realPneus", "1.0", "", 200000);
 		    db.transaction(insert);
 		    function insert(tx) {
@@ -510,11 +418,11 @@ Ext.define('realPneus.controller.main', {
 	var _funcionariosStore = Ext.getStore('funcionariosStore');
 	_funcionariosStore.each(function () {
 	    var _recordFuncionario = _funcionariosStore.data.get(j);
-	    if (_camposLogin.data.login == _recordFuncionario.data.login) {
-		if (_camposLogin.data.senha == '1234') {
+	    if (_camposLogin.data.login === _recordFuncionario.data.login) {
+		if (_camposLogin.data.senha === '1234') {
 		    var _codigoFuncionarioStore = Ext.getStore('codigoFuncionarioStore');
 		    var _recordFuncionarioStore = _codigoFuncionarioStore.data.get(1);
-		    if (_recordFuncionarioStore == null) {
+		    if (_recordFuncionarioStore === null) {
 			var _model = Ext.create('realPneus.model.codigoFuncionarioModel', {
 			    codigo_funcionario: _recordFuncionario.data.codigo
 			});
@@ -555,7 +463,7 @@ Ext.define('realPneus.controller.main', {
 	var _record = _store2.data.get(1);
 	var _form = this.getIpSincronizarForm();
 	var _camposForm2 = Ext.create('realPneus.model.ipSincronizarModel', _form.getValues());
-	if (_record == null) {
+	if (_record === null) {
 	    var _camposForm = Ext.create('realPneus.model.ipSincronizarModel', {
 		ip: _camposForm2.data.ip
 	    });
@@ -587,7 +495,7 @@ Ext.define('realPneus.controller.main', {
 	_servicoStore.each(function () {
 
 	    var _recordServico = _servicoStore.data.get(i);
-	    if (_record.data.medida == _recordServico.data.medida) {
+	    if (_record.data.medida === _recordServico.data.medida) {
 		option[n] = new Object();
 		option[n].text = _recordServico.data.nome;
 		option[n].value = _recordServico.data.codigo;
@@ -630,329 +538,12 @@ Ext.define('realPneus.controller.main', {
 		}
 	    }
 	});
-
-	//get the store and the value of the field
-//	    var store = Ext.getCmp('clientesList').getStore();    //  getting the store that drives the contact list
-
-//	    //first clear any current filters on thes tore
-//	    store.clearFilter();
-
-	//check if a value is set first, as if it isnt we dont have to do anything
-//	    if (value) {
-//		console.log(value);
-//		//the user could have entered spaces, so we must split them so we can loop through them all
-//		var searches = value.split(' '),
-//			regexps = [],
-//			i;
-//
-//		//loop them all
-//		for (i = 0; i < searches.length; i++) {
-//		    //if it is nothing, continue
-//		    if (!searches[i])
-//			continue;
-//
-//		    //if found, create a new regular expression which is case insenstive
-//		    regexps.push(new RegExp(searches[i], 'i'));
-//		}
-//
-//		//now filter the store by passing a method
-//		//the passed method will be called for each record in the store
-//		store.filter(function (record) {
-//		    console.log(record);
-//		    var matched = [];
-//		    //loop through each of the regular expressions
-//		    for (i = 0; i < regexps.length; i++) {
-//			var search = regexps[i],
-//				didMatch = record.get('nome_cliente').match(search);
-//			//if it matched the first or last name, push it into the matches array 
-//
-//			matched.push(didMatch);
-//
-//		    }  //if nothing was found, return false (dont so in the store)               
-//
-//		    if (regexps.length > 1 && matched.indexOf(false) !== -1) {
-//			return false;
-//		    } else {
-//			//else true true (show in the store)
-//			return matched[0];
-//		    }
-//		});
-//	    }
-//	} else {
-//	    var store = Ext.getCmp('clientesList').getStore();    //  getting the store that drives the contact list
-//
-//	    //first clear any current filters on thes tore
-//	    store.clearFilter();
-//	}
     },
-    /**
-     * Called when the user taps on the clear icon in the search field.
-     * It simply removes the filter form the store
-     */
+   
     onSearchClearIconTap: function () {
 	//call the clearFilter method on the store instance
 	Ext.getCmp('clientesList').getStore().clearFilter();
     }
-    ///
-
-    /*
-     onSearchKeyUp: function (textfield, e, eOpts) {
-     var value = textfield.getValue(), // Search value
-     
-     store = Ext.getStore('clientesStore');
-     
-     console.log(store);
-     
-     console.log(value);
-     // store.clearFilter();
-     
-     store.clearFilter(!!value);
-     
-     if (value) {
-     
-     // Spit value to get multiple terms
-     var terms = value.split(' ');
-     
-     // Convert each search string into regex
-     var regexps = [],
-     i, regex;
-     ;
-     
-     for (i = 0; i < terms.length; i++) {
-     //if it is nothing, continue
-     if (!terms[i])
-     continue;
-     
-     regex = terms[i].trim();
-     regex = regex.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
-     
-     //if found, create a new regular expression which is case insenstive
-     regexps.push(new RegExp(regex.trim(), 'i'));
-     }
-     
-     }
-     //store.filter("email", /\.com$/);
-     //   store.filterFn();
-     console.log("oi");
-     // Filter records
-     
-     store.filter(function (record) {
-     console.log(record);
-     
-     var matched = [];
-     
-     //loop through each of the regular expressions
-     for (i = 0; i < regexps.length; i++) {
-     var search = regexps[i],
-     didMatch = record.get('first_name').match(search) ||
-     record.get('last_name').match(search);  
-     //if it matched the first or last name, push it into the matches array 
-     
-     matched.push(didMatch);
-     console.log(search);
-     }  //if nothing was found, return false (dont so in the store)               
-     
-     if (regexps.length > 1 && matched.indexOf(false) != -1) {
-     return false;
-     } else {
-     //else true true (show in the store)
-     return matched[0];
-     }
-     
-     });
-     
-     },
-     onSearchClearIconTap: function (textfield, e, eOpts) {
-     
-     // Get store
-     var store = Ext.getStore('clientesStore');
-     
-     // Clear filter
-     store.clearFilter();
-     Ext.getCmp('clienteList').getStore().clearFilter();
-     Ext.Viewport.setActiveItem(this.getClientesList());
-     
-     }
-     
-     */
-//-----------------------------------
-
-
-    /* store.filter(function (record) {
-     
-     
-     var matches = [];
-     });
-     */
-
-
-
-
-
-
-
-
-
-    ///
-
-
-    /*search: function (textfield, e, eOpts) {
-     var value = textfield.getValue(), // Search value
-     store = Ext.getStore('clientesStore');	// People store
-     
-     // Clear current filter if less than 2
-     if (value.length === 0) {
-     store.clearFilter();
-     }
-     
-     // Search term must be at least 2 characters
-     if (value.length < 2) {
-     return;
-     }
-     
-     // Clear any current filters
-     store.clearFilter();
-     
-     // Check if a value is provided
-     if (value) {
-     
-     // Spit value to get multiple terms
-     var terms = value.split(' ');
-     
-     // Convert each search string into regex
-     var regexps = [];
-     Ext.each(terms, function (term) {
-     
-     // Ensure term is not space and at least 2 characters
-     if (term && term.length > 1) {
-     regexps.push(new RegExp(term, 'i')); // Case-insensitive regex
-     }
-     
-     });
-     
-     store.filter();
-     // Filter records
-     store.filter(function (record) {
-     
-     
-     var matches = [];
-     
-     // Check each of the regular expressions
-     Ext.each(regexps, function (regex) {
-     
-     var match = record.get('nome_cliente').match(regex);
-     matches.push(match);
-     
-     });
-     
-     // If nothing was found, return false to not show
-     if (regexps.length > 1 && matches.indexOf(false) != -1) {
-     return false;
-     } else {
-     // Else return to show
-     return matches[0];
-     }
-     
-     });
-     
-     }
-     
-     },
-     */
-
-
-
-    ////////////TESTEE
-//    , getListConfiguration: function () {
-//	return {
-//	    //give it an xtype of list
-//	    xtype: 'list',
-//	    ui: 'round',
-//	    pinHeaders: false,
-//	    //itemTpl defines the template for each item in the list
-//	    itemTpl: '<div class="contact">{firstName} <strong>{lastName}</strong></div>',
-//	    //give it a link to the store instance
-//	    store: this.getStore(),
-//	    useSimpleItems: true,
-//	    grouped: true,
-//	    emptyText: '<div style="margin-top: 20px; text-align: center">No Matching Items</div>',
-//	    disableSelection: true,
-//	    items: [
-//		{
-//		    xtype: 'toolbar',
-//		    docked: 'top',
-//		    items: [
-//			{xtype: 'spacer'},
-//			{
-//			    xtype: 'searchfield',
-//			    placeHolder: 'Search...',
-//			    listeners: {
-//				scope: this,
-//				clearicontap: this.onSearchClearIconTap,
-//				keyup: this.onSearchKeyUp
-//			    }
-//			},
-//			{xtype: 'spacer'}
-//		    ]
-//		}
-//	    ]
-//	};
-//    },
-//    /**
-//     * Returns a new store instance if one hasn't been created yet
-//     * @return {Ext.data.Store}
-//     */
-//    getStore: function () {
-//	//check if a store has already been set
-//	if (!this.store) {
-//	    //if not, create one
-//	    this.store = Ext.create('Ext.data.Store', {
-//		//define the stores fields
-//		fields: ['firstName', 'lastName'],
-//		//sort the store using the lastname field
-//		sorters: 'lastName',
-//		//group the store using the lastName field
-//		groupField: 'lastName',
-//		//and give it some data
-//		data: [
-//		    {firstName: 'Tommy', lastName: 'Maintz'},
-//		    {firstName: 'Rob', lastName: 'Dougan'},
-//		    {firstName: 'Ed', lastName: 'Avins'},
-//		    {firstName: 'Jamie', lastName: 'Avins'},
-//		    {firstName: 'Dave', lastName: 'Dougan'},
-//		    {firstName: 'Abraham', lastName: 'Elias'},
-//		    {firstName: 'Jacky', lastName: 'Ngyuyen'},
-//		    {firstName: 'Jay', lastName: 'Ngyuyen'},
-//		    {firstName: 'Jay', lastName: 'Robinson'},
-//		    {firstName: 'Rob', lastName: 'Avins'},
-//		    {firstName: 'Ed', lastName: 'Dougan'},
-//		    {firstName: 'Jamie', lastName: 'Poulden'},
-//		    {firstName: 'Dave', lastName: 'Spencer'},
-//		    {firstName: 'Abraham', lastName: 'Avins'},
-//		    {firstName: 'Jacky', lastName: 'Avins'},
-//		    {firstName: 'Rob', lastName: 'Kaneda'},
-//		    {firstName: 'Ed', lastName: 'Elias'},
-//		    {firstName: 'Tommy', lastName: 'Dougan'},
-//		    {firstName: 'Rob', lastName: 'Robinson'}
-//		]
-//	    });
-//	}
-//
-//	//return the store instance
-//	return this.store;
-//    }
-    /**
-     * Called when the search field has a keyup event.
-     *
-     * This will filter the store based on the fields content.
-     */
-
-
-
-
-
-
-
-
+ 
 });
 
